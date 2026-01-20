@@ -10,22 +10,6 @@ import os
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-# Set MuJoCo GL backend to avoid EGL context cleanup issues
-# Use glfw if available (more stable than EGL), otherwise fall back to osmesa for headless rendering
-if "MUJOCO_GL" not in os.environ:
-    # Try glfw first (more stable than EGL), fall back to osmesa for headless
-    # This avoids EGL context cleanup errors during garbage collection
-    import sys
-    if sys.platform.startswith('linux'):
-        # On Linux, prefer glfw if display is available, otherwise osmesa
-        if 'DISPLAY' in os.environ:
-            os.environ["MUJOCO_GL"] = "glfw"
-        else:
-            os.environ["MUJOCO_GL"] = "osmesa"
-    else:
-        # On other platforms, use glfw
-        os.environ["MUJOCO_GL"] = "glfw"
-
 import gym
 from gym import spaces
 
