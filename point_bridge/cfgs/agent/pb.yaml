@@ -1,0 +1,26 @@
+# @package agent
+_target_: agent.pb.BCAgent
+obs_shape: ??? # to be specified later
+action_shape: ??? # to be specified later
+device: ${device}
+lr: 1e-4
+hidden_dim: ${suite.hidden_dim}
+stddev_schedule: 0.1
+use_tb: ${use_tb}
+policy_head: ${policy_head}
+use_language: ${use_language}
+pixel_keys: ${suite.pixel_keys}
+proprio_key: ${suite.proprio_key}
+use_proprio: ${use_proprio}
+history_len: ${suite.history_len}
+eval_history_len: ${suite.eval_history_len}
+action_chunking: ${action_chunking}
+num_queries: ${num_queries}
+temporal_agg_strategy: ${temporal_agg_strategy}
+max_episode_len: ${suite.task_make_fn.max_episode_len}
+film: true
+obs_type: ${suite.obs_type}
+action_mode: ${suite.action_mode}
+robot_points_key: ${suite.robot_points_key}
+object_points_key: ${suite.object_points_key}
+num_points_per_obj: ${suite.num_points_per_obj}

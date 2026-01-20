@@ -1,0 +1,21 @@
+bc_dataset:
+  _target_: read_data.mimiclabs.BCDataset
+  path: ${data_dir}/mimiclabs
+  suffix: null
+  num_demos_per_task: ${num_demos_per_task}
+  history_len: ${suite.history_len}
+  action_chunking: ${action_chunking}
+  num_queries: ${num_queries}
+  img_size: ${suite.img_size}
+  num_robot_points: ${suite.num_robot_points}
+  num_points_per_obj: ${suite.num_points_per_obj}
+  robot_points_key: ${suite.robot_points_key}
+  object_points_key: ${suite.object_points_key}
+  pixel_keys: ${suite.pixel_keys}
+  act_subsample: 1
+  obs_subsample: 1
+  obs_type: ${suite.obs_type}
+  action_mode: ${suite.action_mode}
+  task_indices: null # list of task indices to load
+  noise_object_points: true
+  noise_std: 0.01
