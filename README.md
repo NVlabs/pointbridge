@@ -28,6 +28,10 @@ This is the official code for the paper ["Point Bridge: 3D Representations for C
 
 We welcome contributions! See [Contributing Guide](docs/contributing.md) for details.
 
+## License
+
+The code is released under the [NVIDIA Source Code License](https://github.com/NVlabs/pointbridge/blob/main/LICENSE).
+
 ## 📄 Citation
 If you find this work useful, please cite the paper using the following bibtex:
 
