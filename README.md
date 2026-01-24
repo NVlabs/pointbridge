@@ -1,8 +1,14 @@
 # Point Bridge
 
-This is the official code for the paper ["Point Bridge: 3D Representations for Cross Domain Policy Learning"]().
+This is the official code for the paper ["Point Bridge: 3D Representations for Cross Domain Policy Learning"](https://arxiv.org/abs/2601.16212v1).
 
 **Point Bridge** is a framework for learning robot manipulation policies using **3D point representations** that enable transfer across simulation, real-world, and different camera viewpoints.
+
+Website: https://pointbridge3d.github.io/
+
+Paper: https://arxiv.org/abs/2601.16212v1
+
+For business inquiries, please submit this form: [NVIDIA Research Licensing](https://www.nvidia.com/en-us/research/inquiries/)
 
 ## 🌟 Key Features
 
@@ -36,10 +42,10 @@ The code is released under the [NVIDIA Source Code License](https://github.com/N
 If you find this work useful, please cite the paper using the following bibtex:
 
 ```
-@article{haldar2025pointbridge,
-  title={Point-Bridge: 3D Representations for Cross Domain Policy Learning},
-  author={},
-  journal={},
-  year={2025}
+@article{haldar2026pointbridge,
+  title={Point Bridge: 3D Representations for Cross Domain Policy Learning},
+  author={Haldar, Siddhant and Johannsmeier, Lars and Pinto, Lerrel and Gupta, Abhishek and Fox, Dieter and Narang, Yashraj and Mandlekar, Ajay},
+  journal={arXiv preprint arXiv:2601.16212},
+  year={2026}
 }
 ```
