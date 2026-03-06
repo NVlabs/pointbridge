@@ -6,7 +6,7 @@ This is the official code for the paper ["Point Bridge: 3D Representations for C
 
 Website: https://pointbridge3d.github.io/
 
-Paper: https://arxiv.org/abs/2601.16212v2
+Paper: https://arxiv.org/abs/2601.16212
 
 For business inquiries, please submit this form: [NVIDIA Research Licensing](https://www.nvidia.com/en-us/research/inquiries/)
 
